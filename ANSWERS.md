@@ -12,15 +12,12 @@ Open `index.html` in browser or use Live Server.
 
 Replace API key in `script.js` with your own OpenWeather API key.
 
----
 
 ## 2. Stack choice
 
 I used HTML, CSS, and JavaScript because this is a frontend project that only requires API calls and UI updates. JavaScript is ideal because it supports fetch API and runs directly in the browser.
 
 A worse choice would be using backend frameworks like Django or Spring Boot because they are unnecessary for this lightweight frontend application.
-
----
 
 ## 3. Edge case handled
 
@@ -34,19 +31,15 @@ if (!res.ok) throw new Error("City not found");
 
 Without this, the app would crash or show incorrect data.
 
----
-
 ## 4. AI usage
 
 I used AI to:
 
 * structure README
-* improve error handling ideas
-* suggest UI improvements
+* structure ANSWERS
 
-I modified the AI output to match my actual project structure.
 
----
+
 
 ## 5. Honest gap
 
