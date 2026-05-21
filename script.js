@@ -159,13 +159,12 @@ function updateForecast(data) {
   });
 
   const forecastArray = Array.from(dailyMap.entries());
-  const middleIndex = Math.floor(forecastArray.length / 2); 
-  forecastContainer.appendChild(createForecastCard(forecastArray[middleIndex]));
-  forecastArray.forEach(([day, value], index) => {
-    if (index !== middleIndex) {
-      forecastContainer.appendChild(createForecastCard([day, value]));
-    }
-  });
+
+// show only first 5 days (clean and standard)
+forecastArray.slice(0, 5).forEach(([day, value]) => {
+  forecastContainer.appendChild(createForecastCard([day, value]));
+});
+
 }
 
 function createForecastCard([day, value]) {
